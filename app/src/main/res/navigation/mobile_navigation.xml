@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.app.fitpeo.ui.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_wallet"
+        android:name="com.app.fitpeo.ui.home.Wallet"
+        android:label="@string/yourwallet"
+        tools:layout="@layout/fragment_wallet" />
+    <fragment
+        android:id="@+id/nav_wallet_history"
+        android:name="com.app.fitpeo.ui.home.WalletHistory"
+        android:label="@string/wallethistory"
+        tools:layout="@layout/fragment_wallet_history" />
+
+    <fragment
+        android:id="@+id/nav_team"
+        android:name="com.app.fitpeo.ui.home.Team"
+        android:label="@string/team"
+        tools:layout="@layout/fragment_team" />
+
+    <fragment
+        android:id="@+id/nav_statistics"
+        android:name="com.app.fitpeo.ui.home.Statistics"
+        android:label="@string/statistics"
+        tools:layout="@layout/fragment_statistics" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.app.fitpeo.ui.home.Profile"
+        android:label="@string/myprofile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_changepassword"
+        android:name="com.app.fitpeo.ui.home.ChangePassword"
+        android:label="@string/changepassword"
+        tools:layout="@layout/fragment_change_password" />
+
+
+    <dialog
+        android:id="@+id/nav_logout"
+        android:name="com.app.fitpeo.ui.home.Logout"
+        android:label="@string/logout"
+        tools:layout="@layout/fragment_logout" />
+
+</navigation>
